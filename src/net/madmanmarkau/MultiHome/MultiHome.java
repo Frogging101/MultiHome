@@ -105,23 +105,14 @@ public class MultiHome extends JavaPlugin {
 		this.commandExecutor = new MultiHomeCommandExecutor(this);
 		
     	getCommand("home").setExecutor(commandExecutor);
-    	getCommand("mhome").setExecutor(commandExecutor);
     	getCommand("sethome").setExecutor(commandExecutor);
-    	getCommand("msethome").setExecutor(commandExecutor);
     	getCommand("deletehome").setExecutor(commandExecutor);
-    	getCommand("mdeletehome").setExecutor(commandExecutor);
     	getCommand("listhomes").setExecutor(commandExecutor);
-    	getCommand("mlisthomes").setExecutor(commandExecutor);
     	getCommand("invitehome").setExecutor(commandExecutor);
-    	getCommand("minvitehome").setExecutor(commandExecutor);
     	getCommand("invitehometimed").setExecutor(commandExecutor);
-    	getCommand("minvitehometimed").setExecutor(commandExecutor);
     	getCommand("uninvitehome").setExecutor(commandExecutor);
-    	getCommand("muninvitehome").setExecutor(commandExecutor);
     	getCommand("listinvites").setExecutor(commandExecutor);
-    	getCommand("mlistinvites").setExecutor(commandExecutor);
     	getCommand("listmyinvites").setExecutor(commandExecutor);
-    	getCommand("mlistmyinvites").setExecutor(commandExecutor);
     }
     
     public HomeManager getHomeManager() {

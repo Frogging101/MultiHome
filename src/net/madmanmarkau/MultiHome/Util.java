@@ -9,6 +9,7 @@ import java.util.List;
 import net.madmanmarkau.MultiHome.Data.HomeEntry;
 import net.madmanmarkau.MultiHome.Data.InviteEntry;
 
+import org.bukkit.Chunk;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -97,6 +98,11 @@ public class Util {
 	 * been fixed in 1.2.
 	 */
 	public static void teleportPlayer(Player player, Location location, JavaPlugin plugin) {
+		Chunk c = location.getChunk();
+		c.load(true);
+		while(!c.isLoaded()){
+			continue;
+		}		
 		player.teleport(location);
 	}
 	
